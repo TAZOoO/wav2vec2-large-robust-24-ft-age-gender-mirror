@@ -1,5 +1,4 @@
 ---
-language: en
 datasets:
 - agender
 - mozillacommonvoice
