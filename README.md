@@ -138,11 +138,11 @@ def process_func(
 
 
 print(process_func(signal, sampling_rate))
-#    Age       child      female      male
-# [[ 0.3079211 -1.6096017 -2.1094327  3.1461434]]
+#    Age        child       female       male
+# [[ 0.33793038 -0.17247453 -0.34937087  0.43983212]]
 
 print(process_func(signal, sampling_rate, embeddings=True))
 # Pooled hidden states of last transformer layer
-# [[-0.00752167  0.0065819  -0.00746342 ...  0.00663632  0.00848748
-#    0.00599211]]
+# [[ 0.024444    0.0508722   0.04930823 ...  0.07247854 -0.0697901
+#   -0.0170537 ]]
 ```
