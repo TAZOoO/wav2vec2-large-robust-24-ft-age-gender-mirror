@@ -91,7 +91,7 @@ class AgeGenderModel(Wav2Vec2PreTrainedModel):
         hidden_states = outputs[0]
         hidden_states = torch.mean(hidden_states, dim=1)
         logits_age = self.age(hidden_states)
-        logits_gender = self.gender(hidden_states)
+        logits_gender = torch.softmax(self.gender(hidden_states), dim=1)
 
         return hidden_states, logits_age, logits_gender
 
@@ -138,8 +138,8 @@ def process_func(
 
 
 print(process_func(signal, sampling_rate))
-#    Age        child       female       male
-# [[ 0.33793038 -0.17247453 -0.34937087  0.43983212]]
+#    Age        child      female     male
+# [[ 0.33793038 0.2715511  0.2275236  0.5009253 ]]
 
 print(process_func(signal, sampling_rate, embeddings=True))
 # Pooled hidden states of last transformer layer
