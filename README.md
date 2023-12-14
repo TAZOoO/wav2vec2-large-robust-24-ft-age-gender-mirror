@@ -138,7 +138,7 @@ def process_func(
 
 
 print(process_func(signal, sampling_rate))
-#    Age        child      female     male
+#    Age        female     male       child
 # [[ 0.33793038 0.2715511  0.2275236  0.5009253 ]]
 
 print(process_func(signal, sampling_rate, embeddings=True))
