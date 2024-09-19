@@ -28,7 +28,7 @@ on [aGender](https://paperswithcode.com/dataset/agender),
 [Timit](https://catalog.ldc.upenn.edu/LDC93s1) and 
 [Voxceleb 2](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html).
 For this version of the model we trained all 24 transformer layers.
-An [ONNX](https://onnx.ai/") export of the model is available from 
+An [ONNX](https://onnx.ai/) export of the model is available from 
 [doi:10.5281/zenodo.7761387](https://doi.org/10.5281/zenodo.7761387). 
 Further details are given in the associated [paper](https://arxiv.org/abs/2306.16962) 
 and [tutorial](https://github.com/audeering/w2v2-age-gender-how-to).
