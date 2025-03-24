@@ -13,6 +13,8 @@ tags:
 - age-recognition
 - gender-recognition
 license: cc-by-nc-sa-4.0
+base_model:
+- facebook/wav2vec2-large-robust
 ---
 
 # Model for Age and Gender Recognition based on Wav2vec 2.0 (24 layers)
