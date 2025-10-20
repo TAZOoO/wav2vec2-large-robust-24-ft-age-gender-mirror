@@ -148,3 +148,5 @@ print(process_func(signal, sampling_rate, embeddings=True))
 # [[ 0.024444    0.0508722   0.04930823 ...  0.07247854 -0.0697901
 #   -0.0170537 ]]
 ```
+
+# Original model by audEERING – https://huggingface.co/audeering/wav2vec2-large-robust-24-ft-age-gender, licensed under CC BY-SA 4.0.
